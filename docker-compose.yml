@@ -6,6 +6,8 @@ services:
         container_name: mysql
         env_file:
             - ./.env
+        ports:
+            - 3306:3306
         volumes:
             - ./storage/mysql:/var/lib/mysql
             - ./mysql/conf.d:/etc/mysql/conf.d
@@ -26,7 +28,7 @@ services:
         env_file:
             - ./.env
         ports:
-            - 8888:80
+            - 8088:80
         volumes:
             - ./web/src:/var/www
             - ./storage/app:/var/www/storage/app

@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function() {
+    Route::get('/test', function (Request $request) {
+        return response()->json(['name' => 'test']);
+    });
+
+    Route::post('apnics/search','ApnicsController@search');
+});
+
+Route::group(['middleware' => ['web']], function() {
+    Route::get('apnics/init','ApnicsController@init');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
