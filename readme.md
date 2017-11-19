@@ -56,10 +56,17 @@ To get started, the following steps needs to be taken:
 <p>&nbsp;</p>
 
 ## Run the API
-Run the api from the host machine: `curl --data "api_token={api_token}&type=asn&year=2016&country=cn&search_type=total" http://localhost:8088/api/apnics/search` or use [postman](https://www.getpostman.com/).
+Run the api from the host machine: 
+  ```bash
+  curl --data "api_token={api_token}&type=asn&year=2016&country=cn&search_type=total" http://localhost:8088/api/apnics/search
+  ```
+or use [postman](https://www.getpostman.com/).
 
-Run the api from asnlookup_web container: `curl --data "api_token={api_token}&type=asn&year=2016&country=cn&search_type=total" http://localhost:80/api/apnics/search`.
-
+Run the api from asnlookup_web container: 
+  ```bash
+  curl --data "api_token={api_token}&type=asn&year=2016&country=cn&search_type=total" http://localhost:80/api/apnics/search
+  ```
+  
 <p>&nbsp;</p>
 
 ## Troubleshooting
