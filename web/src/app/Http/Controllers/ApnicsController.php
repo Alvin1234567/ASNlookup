@@ -117,7 +117,7 @@ class ApnicsController extends Controller
             if( isset($line_array[$i]) && substr($line_array[$i], 0, 5)=='apnic' )
             {
                 $data = explode('|',$line_array[$i]);
-               if($i>53000) var_dump(array($i,$data));
+                #if($i>53000) var_dump(array($i,$data));
                 $apnic = new Apnic;
                 $apnic->registry = $data[0];
                 $apnic->country = $data[1];
