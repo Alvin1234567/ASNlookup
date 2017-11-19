@@ -7,7 +7,7 @@ services:
         env_file:
             - ./.env
         ports:
-            - 3306:3306
+            - 33306:3306
         volumes:
             - ./storage/mysql:/var/lib/mysql
             - ./mysql/conf.d:/etc/mysql/conf.d
