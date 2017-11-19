@@ -70,7 +70,7 @@ Run the api from asnlookup_web container:
 <p>&nbsp;</p>
 
 ## Troubleshooting
-* if see `The "https://packagist.org/packages.json" file could not be downloaded` error when run `composer update`, please check [here](https://stackoverflow.com/questions/40091610/composer-update-not-working-since-installing-ssl-certificate)
+* if see `The "https://packagist.org/packages.json" file could not be downloaded` error when run `composer update`, please modify `/etc/resolv.conf` from the asnlookup_web container with `nameserver 8.8.8.8` or check [here](https://stackoverflow.com/questions/40091610/composer-update-not-working-since-installing-ssl-certificate)
 * Port number might be already in use, change from `8088` to another number in `docker-compose.yml` file.
 * If there are container name conflicts, update the *container_name* value for that container in the `docker-compose.yml` file. 
 * If have any other issues, [report them](https://github.com/Alvin1234567/ASNlookup/issues).
