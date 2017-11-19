@@ -17,7 +17,7 @@ This is a testing Laravel + Docker project. It pulls the data from ftp://ftp.apn
 
 ## Installation
 To get started, the following steps needs to be taken:
-* Clone the repo `https://github.com/Alvin1234567/ASNlookup`
+* Clone the repo `git clone https://github.com/Alvin1234567/ASNlookup`
 * Change to the directory `cd ASNlookup`
 * Run `docker-compose up -d` to start the containers.
 * Update project dependencies:
