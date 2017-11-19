@@ -1,8 +1,7 @@
 
 # ASN Lookup
 
-This is a testing Laravel + Docker project. It pulls the data from ftp://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest and import into a MySQL database. This project comes with a Auth section for user and api_token management. To use the API function user needs to register first.
-
+This is a testing Laravel + Docker project. It pulls the data from ftp://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest and import into a MySQL database. This project comes with a Auth section for user and api_token management. To use the API function, user needs to register first.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
