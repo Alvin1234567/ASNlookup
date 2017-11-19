@@ -8,9 +8,9 @@ This is a testing Laravel + Docker project. It pulls the data from ftp://ftp.apn
 
 ## Pre-requisites
 * Host machine has stable internet connectivity.
-* Port 33306 is available on the host machine.
+* Port 33306, 8088 are available on the host machine.
 * Git has been installed on the host machine.
-* Docker running on the host machine.
+* Docker is running on the host machine.
 * Basic knowledge of Docker.
 
 <p>&nbsp;</p>
@@ -52,7 +52,7 @@ To get started, the following steps needs to be taken:
     curl http://localhost:80/apnics/init
   ```
 * Visit **http://localhost:8088** from the host machine to create an api user.
-* Get the api_token through the database running in asnlookup_mysql container which is stored in the api_token field of homestead.users table.
+* Get the api_token through the database running in asnlookup_mysql container which is stored in the api_token field of homestead.users table. Or connect the database throught post 33306 from the host machine.
 
 
 <p>&nbsp;</p>
