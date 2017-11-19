@@ -26,7 +26,7 @@ class CreateApnicsTable extends Migration
             });
 
         Schema::table('apnics', function (Blueprint $table) {
-            $table->index('conutry');
+            $table->index('country');
             $table->index('type');
             $table->index('registered_date');
         });
