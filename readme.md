@@ -26,8 +26,6 @@ To get started, the following steps needs to be taken:
     ```bash
       composer update
     ```
-    if see `The "https://packagist.org/packages.json" file could not be downloaded` error, please check [here](https://stackoverflow.com/questions/40091610/composer-update-not-working-since-installing-ssl-certificate)
-    
 * Update database connections:
   Access asnlookup_mysql container by `docker exec -it {asnlookup_mysql CONTAINER ID} bash` and get the ip address, run `ip add`, the ip address normally showing as 172.18.0.`*`/16.
 * Setup database connection from asnlookup_web container, run :
@@ -65,6 +63,7 @@ Run the api from asnlookup_web container: `curl --data "api_token={api_token}&ty
 <p>&nbsp;</p>
 
 ## Troubleshooting
+* if see `The "https://packagist.org/packages.json" file could not be downloaded` error when run `composer update`, please check [here](https://stackoverflow.com/questions/40091610/composer-update-not-working-since-installing-ssl-certificate)
 * Port number might be already in use, change from `8088` to another number in `docker-compose.yml` file.
 * If there are container name conflicts, update the *container_name* value for that container in the `docker-compose.yml` file. 
 * If have any other issues, [report them](https://github.com/Alvin1234567/ASNlookup/issues).
